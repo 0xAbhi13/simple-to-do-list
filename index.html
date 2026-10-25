@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple To-Do List</title>
+  <meta name="description" content="A simple in-memory to-do list built with HTML5, CSS3, and vanilla JavaScript." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="pageTitle">
+      <header class="card__header">
+        <p class="eyebrow">Veda Technology Internship</p>
+        <h1 id="pageTitle" class="title">Simple To-Do List</h1>
+        <p class="subtitle">Add tasks, track progress, and clear them when done. Stored in memory only.</p>
+      </header>
+
+      <form id="taskForm" class="input-row" aria-label="Add a new task">
+        <label for="taskInput" class="sr-only">New task description</label>
+        <input
+          type="text"
+          id="taskInput"
+          class="input"
+          placeholder="What needs to be done?"
+          autocomplete="off"
+          aria-describedby="status"
+        />
+        <button type="submit" id="addBtn" class="btn btn--primary">Add Task</button>
+      </form>
+
+      <div class="meta">
+        <p id="counter" class="counter" aria-live="polite">0 tasks</p>
+      </div>
+
+      <ul id="taskList" class="task-list" aria-live="polite" aria-label="Task list"></ul>
+
+      <p id="emptyState" class="empty-state">No tasks yet. Add your first task above.</p>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">Built by Abhishek Jadhav | Veda Technology Internship — Day 16</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
