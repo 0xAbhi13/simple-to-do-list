@@ -15,10 +15,6 @@
 
 ---
 
-Simple To-Do List by **Abhishek Jadhav** &mdash; Web Developer and first-year BCA student at VIIT, Baramati. Built with **HTML5 + CSS3 + Vanilla JavaScript**: add and remove tasks that live only in a JavaScript array in memory. No frameworks, no build step, no backend, no persistence.
-
-> **Internship attribution:** 45-day Web Development Internship at **Veda Technology** &mdash; Day 16: Simple To-Do List (In-Memory).
-
 ## Features
 
 <div align="center">
@@ -73,36 +69,3 @@ internship-task-16/
 1. Open `index.html` directly in any modern browser (Chrome, Edge, Firefox, Safari).
 2. No build step, no server, no dependencies.
 3. Resize the window or use DevTools device mode to test desktop, tablet, and mobile widths.
-
-## Testing Checklist
-
-- [x] Valid task can be added.
-- [x] Empty and whitespace-only inputs are rejected.
-- [x] Leading and trailing spaces are removed.
-- [x] Pressing Enter adds a task.
-- [x] Multiple tasks render in the correct order.
-- [x] Deleting one task removes only that task.
-- [x] Event delegation works for dynamically rendered delete buttons.
-- [x] Task counter updates correctly.
-- [x] Empty-state message appears when all tasks are deleted.
-- [x] Task text renders safely, including HTML-like characters.
-- [x] Interface works at mobile and desktop widths.
-- [x] Refreshing the page clears all tasks.
-- [x] Browser console contains no JavaScript errors.
-
-## Limitations
-
-- Demo only: tasks are stored in memory and are lost on refresh.
-- No task completion, editing, filters, or themes.
-- No persistence or backend.
-
-## Git Commands
-
-```bash
-git init
-git add .
-git commit -m "Add Day 16 Simple To-Do List"
-git branch -M main
-git remote add origin https://github.com/0xAbhi13/simple-todo-list.git
-git push -u origin main
-```
